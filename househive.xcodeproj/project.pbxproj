@@ -16,6 +16,7 @@
 		79EA0FA01EA41E02002DCED9 /* AppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EA0F9F1EA41E02002DCED9 /* AppIconView.swift */; };
 		79EA0FA31EA41E93002DCED9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EA0FA21EA41E93002DCED9 /* Constants.swift */; };
 		79EA0FA51EA4211D002DCED9 /* CustomizedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EA0FA41EA4211D002DCED9 /* CustomizedBtn.swift */; };
+		79EA0FA71EA43A07002DCED9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EA0FA61EA43A07002DCED9 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		79EA0F9F1EA41E02002DCED9 /* AppIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIconView.swift; sourceTree = "<group>"; };
 		79EA0FA21EA41E93002DCED9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		79EA0FA41EA4211D002DCED9 /* CustomizedBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizedBtn.swift; sourceTree = "<group>"; };
+		79EA0FA61EA43A07002DCED9 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				79EA0F8A1EA41633002DCED9 /* SignInViewController.swift */,
+				79EA0FA61EA43A07002DCED9 /* SignUpViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79EA0FA31EA41E93002DCED9 /* Constants.swift in Sources */,
+				79EA0FA71EA43A07002DCED9 /* SignUpViewController.swift in Sources */,
 				79EA0F8B1EA41633002DCED9 /* SignInViewController.swift in Sources */,
 				79EA0FA01EA41E02002DCED9 /* AppIconView.swift in Sources */,
 				79EA0FA51EA4211D002DCED9 /* CustomizedBtn.swift in Sources */,
