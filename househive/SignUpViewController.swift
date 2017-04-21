@@ -19,4 +19,7 @@ class SignUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func userTappedBackground(sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
 }

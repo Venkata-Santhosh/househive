@@ -12,7 +12,6 @@ class HouseHiveTabViewController : UITabBarController{
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
         self.tabBar.tintColor = UIColor.redColor()
         self.tabBar.barTintColor = UIColor.whiteColor()
       

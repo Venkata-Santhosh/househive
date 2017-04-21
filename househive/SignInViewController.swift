@@ -20,6 +20,9 @@ class SignInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func userTappedBackground(sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
 
 }
 

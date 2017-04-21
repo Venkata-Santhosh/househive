@@ -14,14 +14,35 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Icon" translatesAutoresizingMaskIntoConstraints="NO" id="vJX-aN-sNd">
+                                <rect key="frame" x="131" y="170" width="112" height="173"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Househive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FA5-cm-JV2">
+                                <rect key="frame" x="147" y="353" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.59030663967132568" blue="0.53443413972854614" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FA5-cm-JV2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="96B-Xy-NED"/>
+                            <constraint firstItem="vJX-aN-sNd" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="150" id="NZZ-Bi-Hkb"/>
+                            <constraint firstItem="vJX-aN-sNd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SJx-24-eE7"/>
+                            <constraint firstItem="FA5-cm-JV2" firstAttribute="top" secondItem="vJX-aN-sNd" secondAttribute="bottom" constant="10" id="Wbx-pD-vvo"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="App Icon" width="112" height="173"/>
+    </resources>
 </document>

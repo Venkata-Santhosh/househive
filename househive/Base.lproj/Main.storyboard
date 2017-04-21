@@ -1,11 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9m3-LT-J5e">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Land Screen View Controller-->
+        <scene sceneID="kbO-6i-Jyc">
+            <objects>
+                <viewController id="9m3-LT-J5e" customClass="LandScreenViewController" customModule="househive" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VmE-hX-Swq"/>
+                        <viewControllerLayoutGuide type="bottom" id="R4P-RI-A84"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5zO-yH-zkn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Lbr-8l-th7">
+                                <rect key="frame" x="131" y="170" width="112" height="173"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Househive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8U-EC-xJf">
+                                <rect key="frame" x="140.5" y="353" width="94" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.59030663967132568" blue="0.53443413972854614" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="P8U-EC-xJf" firstAttribute="centerX" secondItem="5zO-yH-zkn" secondAttribute="centerX" id="Cce-fk-Z5e"/>
+                            <constraint firstItem="Lbr-8l-th7" firstAttribute="top" secondItem="VmE-hX-Swq" secondAttribute="bottom" constant="150" id="Mcr-zn-UA2"/>
+                            <constraint firstItem="P8U-EC-xJf" firstAttribute="top" secondItem="Lbr-8l-th7" secondAttribute="bottom" constant="10" id="gVQ-BB-U8C"/>
+                            <constraint firstItem="Lbr-8l-th7" firstAttribute="centerX" secondItem="5zO-yH-zkn" secondAttribute="centerX" id="kLM-dN-3dT"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="landtologinview" id="dpA-MT-0K6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJM-i2-yKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-409.5" y="129.5"/>
+        </scene>
         <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -49,7 +88,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create account ? click on signup button" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRj-jw-RrK">
                                         <rect key="frame" x="41" y="15" width="301.5" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNF-75-0H2" customClass="CustomizedBtn" customModule="househive" customModuleProvider="target">
@@ -84,12 +123,13 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bVa-9b-TTn" customClass="CustomizedTextFieldView" customModule="househive" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bVa-9b-TTn" customClass="CustomizedTextFieldView" customModule="househive" customModuleProvider="target">
                                 <rect key="frame" x="71" y="373" width="232" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="232" id="e6o-CE-Zec"/>
                                 </constraints>
-                                <attributedString key="attributedText"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwo-4g-gCw" customClass="CustomizedBtn" customModule="househive" customModuleProvider="target">
@@ -107,6 +147,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="8DK-Yl-3WA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="7Jx-y3-lxA"/>
                             <constraint firstItem="k8Q-Vy-fu4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9sD-5B-C7e"/>
@@ -121,12 +162,20 @@
                             <constraint firstItem="jGq-Ru-Vns" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="wY6-Am-EwN"/>
                             <constraint firstItem="Pwo-4g-gCw" firstAttribute="top" secondItem="bVa-9b-TTn" secondAttribute="bottom" constant="14" id="wg6-Y1-2Gh"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="YG4-Ko-es8" appends="YES" id="rcj-mn-2yA"/>
+                        </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="YG4-Ko-es8">
+                    <connections>
+                        <action selector="userTappedBackground:" destination="BYZ-38-t0r" id="rHK-YE-OSY"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="139.5" y="136.5"/>
+            <point key="canvasLocation" x="164.5" y="135.5"/>
         </scene>
         <!--House Hive Tab View Controller-->
         <scene sceneID="jp5-EH-JWU">
@@ -165,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uz5-bW-TZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="189.5" y="1973.5"/>
+            <point key="canvasLocation" x="-397.5" y="2821.5"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="d6e-DF-X48">
@@ -184,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wf3-lE-IyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1332.5" y="1991.5"/>
+            <point key="canvasLocation" x="164.5" y="2821.5"/>
         </scene>
         <!--Search-->
         <scene sceneID="xaA-SY-et0">
@@ -197,13 +246,34 @@
                     <view key="view" contentMode="scaleToFill" id="FaH-Q0-OY8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Q2-SI-fGk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="z3k-5B-axn" id="Uld-GW-p7b"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="dPQ-Ot-DFd"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="6Je-QO-G7g" id="biM-hL-sak"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iT8-We-QXs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="6Je-QO-G7g">
+                    <connections>
+                        <outlet property="delegate" destination="z3k-5B-axn" id="k5i-rP-fJ2"/>
+                        <outlet property="searchBar" destination="1Q2-SI-fGk" id="w0T-j9-GD4"/>
+                        <outlet property="searchContentsController" destination="z3k-5B-axn" id="1gD-xq-Ldu"/>
+                        <outlet property="searchResultsDataSource" destination="z3k-5B-axn" id="lkc-K8-9Cd"/>
+                        <outlet property="searchResultsDelegate" destination="z3k-5B-axn" id="Y7Q-h9-s9P"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2549.5" y="1991.5"/>
+            <point key="canvasLocation" x="786.5" y="2821.5"/>
         </scene>
         <!--Home-->
         <scene sceneID="p8Q-EE-8eH">
@@ -267,7 +337,7 @@
                                     <constraint firstAttribute="width" constant="232" id="L8B-az-sNb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7m9-o4-Vhj">
@@ -292,7 +362,7 @@
                                     <constraint firstAttribute="width" constant="232" id="COo-Dh-WDA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIy-gX-D96">
@@ -301,7 +371,7 @@
                                     <constraint firstAttribute="width" constant="232" id="SfZ-SH-UTB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpk-ld-VIl">
@@ -310,7 +380,7 @@
                                     <constraint firstAttribute="width" constant="232" id="ryq-DR-OVy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="olV-TA-30E">
@@ -341,6 +411,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="wIy-gX-D96" firstAttribute="top" secondItem="okv-RY-ROT" secondAttribute="bottom" constant="8" id="1hq-Lr-Cly"/>
                             <constraint firstItem="7m9-o4-Vhj" firstAttribute="centerX" secondItem="mgi-rQ-cTt" secondAttribute="centerX" id="32X-js-mmY"/>
@@ -370,12 +441,20 @@
                                 <exclude reference="WJQ-4f-AHm"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="sEf-Nb-sfj" appends="YES" id="7KW-59-Oab"/>
+                        </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwu-tl-BQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="sEf-Nb-sfj">
+                    <connections>
+                        <action selector="userTappedBackground:" destination="WKG-OG-fjG" id="UyG-gK-AC5"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="706.5" y="151.5"/>
+            <point key="canvasLocation" x="706.5" y="135.5"/>
         </scene>
         <!--Home-->
         <scene sceneID="KnV-ap-Vgy">
@@ -415,7 +494,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oJq-h5-d4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1962.5" y="1991.5"/>
+            <point key="canvasLocation" x="786.5" y="1973.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QIf-w1-plI">
@@ -435,7 +514,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2d-wf-Ekf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="745.5" y="1991.5"/>
+            <point key="canvasLocation" x="164.5" y="1973.5"/>
         </scene>
         <!--Settings-->
         <scene sceneID="QCg-Fe-HNB">

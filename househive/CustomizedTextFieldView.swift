@@ -21,8 +21,7 @@ class CustomizedTextFieldView: UITextField {
     override func textRectForBounds(bounds: CGRect) -> CGRect {
         return bounds.insetBy(dx: 10, dy: 5)
     }
-    
-    override func editingRectForBounds(bounds: CGRect) -> CGRect {
+     override func editingRectForBounds(bounds: CGRect) -> CGRect {
         return bounds.insetBy(dx: 10, dy: 5)
     }
 }
