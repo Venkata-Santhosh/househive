@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		4DD233FA66530D69A09FF2F2 /* Pods_househive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B49AB512F72EDB01805FD7 /* Pods_househive.framework */; };
 		793E041C1EA9CCED00DB398A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 793E041B1EA9CCED00DB398A /* GoogleService-Info.plist */; };
+		793E041F1EAA5B8200DB398A /* FirebaseAuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E041E1EAA5B8200DB398A /* FirebaseAuthServices.swift */; };
+		793E04211EAA70A000DB398A /* FirebaseDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E04201EAA70A000DB398A /* FirebaseDataServices.swift */; };
+		793E04231EAA9A6900DB398A /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E04221EAA9A6900DB398A /* UserDetails.swift */; };
+		793E04251EAA9ACD00DB398A /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E04241EAA9ACD00DB398A /* Address.swift */; };
+		793E04271EAA9C7A00DB398A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E04261EAA9C7A00DB398A /* Post.swift */; };
+		793E04291EAAA14D00DB398A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E04281EAAA14D00DB398A /* SettingsViewController.swift */; };
 		79EA0F891EA41633002DCED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EA0F881EA41633002DCED9 /* AppDelegate.swift */; };
 		79EA0F8B1EA41633002DCED9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EA0F8A1EA41633002DCED9 /* SignInViewController.swift */; };
 		79EA0F8E1EA41633002DCED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79EA0F8C1EA41633002DCED9 /* Main.storyboard */; };
@@ -27,6 +33,12 @@
 		1BDD175CAA290C50623686E9 /* Pods-househive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-househive.release.xcconfig"; path = "Pods/Target Support Files/Pods-househive/Pods-househive.release.xcconfig"; sourceTree = "<group>"; };
 		6A64A15DCDEBA8F0FA915D82 /* Pods-househive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-househive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-househive/Pods-househive.debug.xcconfig"; sourceTree = "<group>"; };
 		793E041B1EA9CCED00DB398A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		793E041E1EAA5B8200DB398A /* FirebaseAuthServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuthServices.swift; sourceTree = "<group>"; };
+		793E04201EAA70A000DB398A /* FirebaseDataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseDataServices.swift; sourceTree = "<group>"; };
+		793E04221EAA9A6900DB398A /* UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
+		793E04241EAA9ACD00DB398A /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		793E04261EAA9C7A00DB398A /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		793E04281EAAA14D00DB398A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		79EA0F851EA41633002DCED9 /* househive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = househive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EA0F881EA41633002DCED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79EA0F8A1EA41633002DCED9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +85,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		793E041D1EAA567D00DB398A /* services */ = {
+			isa = PBXGroup;
+			children = (
+				793E041E1EAA5B8200DB398A /* FirebaseAuthServices.swift */,
+				793E04201EAA70A000DB398A /* FirebaseDataServices.swift */,
+			);
+			name = services;
+			sourceTree = "<group>";
+		};
 		79EA0F7C1EA41633002DCED9 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +115,7 @@
 		79EA0F871EA41633002DCED9 /* househive */ = {
 			isa = PBXGroup;
 			children = (
+				793E041D1EAA567D00DB398A /* services */,
 				79EA0FA11EA41E82002DCED9 /* Util */,
 				79EA0F9B1EA4166C002DCED9 /* models */,
 				79EA0F9C1EA41674002DCED9 /* views */,
@@ -115,6 +137,7 @@
 				79EA0FA61EA43A07002DCED9 /* SignUpViewController.swift */,
 				79EA0FA81EA45415002DCED9 /* HousehiveTabViewController.swift */,
 				79EA0FAA1EA45CDF002DCED9 /* LandScreenViewController.swift */,
+				793E04281EAAA14D00DB398A /* SettingsViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -122,6 +145,9 @@
 		79EA0F9B1EA4166C002DCED9 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				793E04221EAA9A6900DB398A /* UserDetails.swift */,
+				793E04241EAA9ACD00DB398A /* Address.swift */,
+				793E04261EAA9C7A00DB398A /* Post.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -269,10 +295,16 @@
 			files = (
 				79EA0FA31EA41E93002DCED9 /* Constants.swift in Sources */,
 				79EA0FA71EA43A07002DCED9 /* SignUpViewController.swift in Sources */,
+				793E04251EAA9ACD00DB398A /* Address.swift in Sources */,
 				79EA0FA91EA45415002DCED9 /* HousehiveTabViewController.swift in Sources */,
+				793E04211EAA70A000DB398A /* FirebaseDataServices.swift in Sources */,
+				793E04271EAA9C7A00DB398A /* Post.swift in Sources */,
 				79EA0F8B1EA41633002DCED9 /* SignInViewController.swift in Sources */,
+				793E04231EAA9A6900DB398A /* UserDetails.swift in Sources */,
+				793E04291EAAA14D00DB398A /* SettingsViewController.swift in Sources */,
 				79EA0FA01EA41E02002DCED9 /* AppIconView.swift in Sources */,
 				79EA0FA51EA4211D002DCED9 /* CustomizedBtn.swift in Sources */,
+				793E041F1EAA5B8200DB398A /* FirebaseAuthServices.swift in Sources */,
 				79EA0F9E1EA41DAF002DCED9 /* CustomizedTextFieldView.swift in Sources */,
 				79EA0FAB1EA45CDF002DCED9 /* LandScreenViewController.swift in Sources */,
 				79EA0F891EA41633002DCED9 /* AppDelegate.swift in Sources */,

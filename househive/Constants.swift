@@ -10,3 +10,7 @@ import UIKit
 
 
 let SHADOW_GRAY : CGFloat = 120.0 / 255.0
+
+let USERS : String  = "users"
+let POSTS : String = "posts"
+let ADDRESSES : String = "Addresses"

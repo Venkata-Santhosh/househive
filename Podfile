@@ -10,4 +10,5 @@ target 'househive' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'SwiftKeychainWrapper', '~> 1.0.11'
 end
